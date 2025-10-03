@@ -1,0 +1,8 @@
+name: workflowOne
+on: [push, workflow_dispatch]
+jobs:
+  run_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        
