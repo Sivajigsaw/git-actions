@@ -2,8 +2,8 @@ name: secondWorkflow
 on: [push, workflow_dispatch]
 jobs:
   runBuild:
-  runs-on: ubuntu-latest
-  steps:
-    - name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
     
   
