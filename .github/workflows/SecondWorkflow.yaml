@@ -1,9 +1,10 @@
 name: secondWorkflow
-on: [push, workflow_dispatch]
+on: [issues]
 jobs:
   runBuild:
     runs-on: ubuntu-latest
     steps:
-      - name: build
+      - name: Run on issues
+        run: echo "${{toJson(github.event)}}"
     
   
